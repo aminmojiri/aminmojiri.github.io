@@ -13,23 +13,20 @@ header {
     text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
-nav a:hover {
-    background-color: #013a63;
-}
-
-section {
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-}
-
 footer {
-  background-color: #333;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -38,12 +35,15 @@ footer {
     width: 100%;
 }
 
-footer a {
-    color: #09f;
-    text-decoration: none;
-    padding: 10px;
+#main {
+    padding: 20px;
 }
 
-footer a:hover {
-    color: #cff;
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0; /* Adjust vertical spacing for mobile */
+    }
 }
