@@ -1,58 +1,51 @@
-/* style.css */
 body {
     font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #0056b3; /* Dark blue background for the header */
-    color: white;
-    padding: 20px 0;
+    background: #005a9c; /* Adjust the color to make it darker for better visibility */
+    color: #fff;
+    padding: 10px 20px;
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-nav a {
+nav ul li {
+    display: inline; /* This makes the items lay out horizontally */
+    margin-right: 20px; /* Adds space between items */
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-nav a:hover {
-    background-color: #003d7a; /* Slightly darker blue on hover */
-}
-
-section {
-    padding: 20px;
-    background-color: #f4f4f4; /* Light gray background for sections */
-    border: 1px solid #ddd; /* Adding a slight border to the sections */
 }
 
 footer {
-    background-color: #002244; /* Very dark blue for the footer */
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+#main {
+    padding: 20px;
+    margin: 0 10%;
 }
 
-.social-icons img {
-    width: 30px; /* Adjust the size of social media icons */
-    margin: 0 10px; /* Spacing between icons */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stacks the navigation items vertically on small screens */
+        text-align: center;
+    }
 }
