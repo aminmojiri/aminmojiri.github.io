@@ -7,32 +7,34 @@ body {
 }
 
 header {
-    background: #005a9c; /* Adjust the color to make it darker for better visibility */
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #005a9c;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline; /* This makes the items lay out horizontally */
-    margin-right: 20px; /* Adds space between items */
+    display: inline; /* This line ensures the items are horizontal */
+    margin-right: 20px;
 }
 
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -40,12 +42,13 @@ footer {
 
 #main {
     padding: 20px;
-    margin: 0 10%;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 600px) {
     nav ul li {
-        display: block; /* Stacks the navigation items vertically on small screens */
+        display: block;
         text-align: center;
+        margin: 10px 0; /* Adjust vertical spacing for mobile */
     }
 }
